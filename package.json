@@ -1,0 +1,8 @@
+{
+  "name": "unit-integration-e2e-tests",
+  "private": true,
+  "scripts": {
+    "install:all": "(cd frontend && npm install) && (cd backend && npm install) && (cd e2e && npm install)",
+    "test:all": "(npm run react:test --prefix frontend) && (npm run express:test --prefix backend) && (npm run e2e:tests --prefix e2e)"
+  }
+}
